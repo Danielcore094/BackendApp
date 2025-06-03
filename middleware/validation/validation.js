@@ -12,8 +12,11 @@ export const validarCrear = [
 ];
 
 export const validarCliente = [
-  body("nombre").notEmpty().withMessage("El nombre es obligatorio"),
-  body("correo").isEmail().withMessage("El correo no es válido"),
+  body("nombre").notEmpty().withMessage("El campo es obligatorio"),
+  body("especie").notEmpty().withMessage("El campo es obligatorio"),
+  body("propietario").notEmpty().withMessage("El campo es obligatorio"),
   body("telefono").notEmpty().withMessage("El teléfono es obligatorio"),
   body("direccion").notEmpty().withMessage("La dirección es obligatoria"),
+  body("usuario").notEmpty().withMessage("El usuario es obligatorio"),
+  body("contrasena").notEmpty().withMessage("La contraseña es obligatoria"),
 ];
